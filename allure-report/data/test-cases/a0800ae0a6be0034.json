@@ -1,0 +1,105 @@
+{
+  "uid" : "a0800ae0a6be0034",
+  "name" : "test_mouseOperations",
+  "fullName" : "test_MouseOperations#test_mouseOperations",
+  "historyId" : "6860964595573171f9daad238d963314",
+  "time" : {
+    "start" : 1548876420785,
+    "stop" : 1548876433337,
+    "duration" : 12552
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7dfc4912a5b598d7",
+      "name" : "log",
+      "source" : "7dfc4912a5b598d7.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "fa3f680f850a4200",
+      "name" : "stdout",
+      "source" : "fa3f680f850a4200.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "89827b5f5a1f6c73",
+      "name" : "stderr",
+      "source" : "89827b5f5a1f6c73.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_MouseOperations"
+  }, {
+    "name" : "host",
+    "value" : "TestingWorld-PC"
+  }, {
+    "name" : "thread",
+    "value" : "12128-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_MouseOperations"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "11850522dd48ef16",
+      "status" : "passed",
+      "time" : {
+        "start" : 1548876065857,
+        "stop" : 1548876078012,
+        "duration" : 12155
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "4bd50bb694480dd1",
+        "reportUrl" : "http://localhost:8086/job/PythonE/18/allure/#testresult/4bd50bb694480dd1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1548876420785,
+          "stop" : 1548876433337,
+          "duration" : 12552
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a0800ae0a6be0034.json",
+  "parameterValues" : [ ]
+}

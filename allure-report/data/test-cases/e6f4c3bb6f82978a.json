@@ -1,0 +1,75 @@
+{
+  "uid" : "e6f4c3bb6f82978a",
+  "name" : "test_mycase",
+  "fullName" : "test_KeyboardOperations#test_mycase",
+  "historyId" : "ce46140052982228a783338a36f6f8cf",
+  "time" : {
+    "start" : 1548876056185,
+    "stop" : 1548876065824,
+    "duration" : 9639
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "23027fd5a03ace8c",
+      "name" : "log",
+      "source" : "23027fd5a03ace8c.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "8c542f663dcfa755",
+      "name" : "stdout",
+      "source" : "8c542f663dcfa755.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "df50b870786fe2d8",
+      "name" : "stderr",
+      "source" : "df50b870786fe2d8.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_KeyboardOperations"
+  }, {
+    "name" : "host",
+    "value" : "TestingWorld-PC"
+  }, {
+    "name" : "thread",
+    "value" : "12400-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_KeyboardOperations"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e6f4c3bb6f82978a.json",
+  "parameterValues" : [ ]
+}
