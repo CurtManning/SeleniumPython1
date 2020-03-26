@@ -1,10 +1,12 @@
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
+import os
 
 def test_mouseOperations():
 
-    path="C:\\Users\\curtmanning\\PycharmProjects\\SeleniumPython1\\Driver\\chromedriver.exe"
+    path = os.path.abspath(".\\Driver") + "\\chromedriver.exe"
+    # path = "C:\\Users\\curtmanning\\PycharmProjects\\SeleniumPython1\\Driver\\chromedriver.exe"
     driver = Chrome(executable_path=path)
     driver.get("http://www.theTestingWorld.com/")
     act = ActionChains(driver)

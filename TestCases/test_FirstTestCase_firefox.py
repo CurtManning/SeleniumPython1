@@ -1,7 +1,10 @@
 from selenium.webdriver import Firefox
+import os
 
 def test_case_firefox():
-    path="C:\\Users\\curtmanning\\PycharmProjects\\SeleniumPython1\\Driver\\geckodriver.exe"
+
+    path = os.path.abspath(".\\Driver") + "\\geckodriver.exe"
+    # path="C:\\Users\\curtmanning\\PycharmProjects\\SeleniumPython1\\Driver\\geckodriver.exe"
     driver = Firefox(executable_path=path)
     driver.get("http://www.theTestingWorld.com/testings")
 

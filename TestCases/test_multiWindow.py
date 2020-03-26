@@ -5,11 +5,13 @@ from selenium.webdriver.common.by import By
 import selenium.webdriver.support.expected_conditions as ec
 import time
 import pytest
+import os
 
 @pytest.fixture()
 def environment_setup():
     global driver
-    path = "C:\\Users\\curtmanning\\PycharmProjects\\SeleniumPython1\\Driver\\chromedriver.exe"
+    path = os.path.abspath(".\\Driver") + "\\chromedriver.exe"
+    # path = "C:\\Users\\curtmanning\\PycharmProjects\\SeleniumPython1\\Driver\\chromedriver.exe"
     driver = Chrome(executable_path=path)
     driver.get("http://www.theTestingWorld.com/testings")
     driver.maximize_window()
