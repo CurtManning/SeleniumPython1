@@ -1,4 +1,3 @@
-pip3 uninstall pytest
-pip3 uninstall selenium
-pip uninstall pytest
-pip uninstall selenium
+pip install pytest
+pip install selenium
+pip install allure-pytest
