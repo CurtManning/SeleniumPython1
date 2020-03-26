@@ -1,2 +1,4 @@
-pip3 install pytest
-pip3 install selenium
+pip3 uninstall pytest
+pip3 uninstall selenium
+pip uninstall pytest
+pip uninstall selenium
