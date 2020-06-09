@@ -5,7 +5,7 @@ import os
 
 def test_mouseOperations():
 
-    path = os.path.abspath(".\\Driver") + "\\chromedriver.exe"
+    path = os.path.abspath("./Driver") + "/chromedriver.exe"
     # path = "C:\\Users\\curtmanning\\PycharmProjects\\SeleniumPython1\\Driver\\chromedriver.exe"
     driver = Chrome(executable_path=path)
     driver.get("http://www.theTestingWorld.com/")
