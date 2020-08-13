@@ -5,6 +5,7 @@ import os
 
 def test_mycase():
 
+    global driver
     # Set chrome driver
     print("Set chrome driver")
 

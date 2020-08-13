@@ -4,6 +4,7 @@ import os
 
 def test_case_firefox():
 
+    global driver
     # Set chrome driver
     print("Set firefox driver")
 
@@ -29,6 +30,7 @@ def test_case_firefox():
     driver.find_element_by_name("fld_cpassword").send_keys("abcd123")
     driver.find_element_by_name("fld_username").clear()
     driver.find_element_by_name("fld_username").send_keys("abcd123")
+    driver.close()
 
 
 

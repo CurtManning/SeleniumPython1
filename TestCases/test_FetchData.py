@@ -9,6 +9,7 @@ import os
 
 @pytest.fixture()
 def environment_setup():
+    global driver
     # Set chrome driver
     print("Set chrome driver")
     driver = webdriver.Remote(

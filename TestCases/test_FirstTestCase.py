@@ -5,6 +5,7 @@ import os
 
 def test_firstcase():
 
+    global driver
     # Set chrome driver
     print("Set chrome driver")
     driver = webdriver.Remote(
@@ -29,7 +30,7 @@ def test_firstcase():
     driver.find_element_by_name("fld_cpassword").send_keys("abcd123")
     driver.find_element_by_name("fld_username").clear()
     driver.find_element_by_name("fld_username").send_keys("abcd123")
-
+    driver.close()
 
 
 

@@ -5,6 +5,7 @@ import os
 
 def test_mouseOperations():
 
+    global driver
     # Set chrome driver
     print("Set chrome driver")
     driver = webdriver.Remote(

@@ -44,4 +44,5 @@ def test_verify_registration(environment_setup):
 
     driver.switch_to.window(mainWin)
     print(driver.current_url)
+    driver.close()
 
