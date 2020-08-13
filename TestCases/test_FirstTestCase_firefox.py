@@ -1,11 +1,21 @@
+from selenium import webdriver
 from selenium.webdriver import Firefox
 import os
 
 def test_case_firefox():
 
-    path = os.path.abspath("./Driver") + "/geckodriver.exe"
-    # path="C:\\Users\\curtmanning\\PycharmProjects\\SeleniumPython1\\Driver\\geckodriver.exe"
-    driver = Firefox(executable_path=path)
+    # Set chrome driver
+    print("Set firefox driver")
+
+    driver = webdriver.Remote(
+        command_executor="http://10.200.243.162:5555/wd/hub",
+        desired_capabilities={
+            "browserName": "firefox",
+            "video": "True",
+            "platform": "WINDOWS",
+            "platformName": "windows",
+        })
+
     driver.get("http://www.theTestingWorld.com/testings")
 
     # Maximize browser

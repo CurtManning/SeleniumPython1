@@ -1,8 +1,4 @@
-from selenium.webdriver import Chrome
-from selenium.webdriver.support.select import Select
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.common.by import By
-import selenium.webdriver.support.expected_conditions as ec
+from selenium import webdriver
 import time
 import pytest
 import os
@@ -10,9 +6,17 @@ import os
 @pytest.fixture()
 def environment_setup():
     global driver
-    path = os.path.abspath("./Driver") + "/chromedriver.exe"
-    # path = "C:\\Users\\curtmanning\\PycharmProjects\\SeleniumPython1\\Driver\\chromedriver.exe"
-    driver = Chrome(executable_path=path)
+    # Set chrome driver
+    print("Set chrome driver")
+    driver = webdriver.Remote(
+        command_executor="http://10.200.243.162:5555/wd/hub",
+        desired_capabilities={
+            "browserName": "chrome",
+            "browserVersion": "latest",
+            "video": "True",
+            "platform": "WIN10",
+            "platformName": "windows",
+        })
     driver.get("http://www.theTestingWorld.com/testings")
     driver.maximize_window()
     yield
