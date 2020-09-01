@@ -4,7 +4,6 @@ from selenium.webdriver.common.keys import Keys
 import os
 
 def test_mycase():
-
     global driver
     # Set chrome driver
     print("Set chrome driver")

@@ -31,18 +31,15 @@ def test_verify_registration(environment_setup):
     driver.find_element_by_xpath("//a[contains(text(),'Update')]").click()
     time.sleep(10)
     allwindows = driver.window_handles
-    mainWin=""
+    mainWin = ""
     for win in allwindows:
         driver.switch_to.window(win)
-        if(driver.current_url=='http://www.thetestingworld.com/testings/manage_customer.php'):
+        if driver.current_url == 'http://www.thetestingworld.com/testings/manage_customer.php':
             driver.find_element_by_xpath("//button[text()='Start Download']").click()
             time.sleep(5)
             driver.close()
-        elif(driver.current_url=='http://www.thetestingworld.com/testings/dashboard.php'):
-             mainWin=win
-
+        elif driver.current_url == 'http://www.thetestingworld.com/testings/dashboard.php':
+            mainWin = win
 
     driver.switch_to.window(mainWin)
     print(driver.current_url)
-    
-

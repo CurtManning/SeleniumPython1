@@ -3,8 +3,8 @@ from selenium.webdriver import Chrome
 from selenium.webdriver.support.select import Select
 import os
 
-def test_firstcase():
 
+def test_firstcase():
     global driver
     # Set chrome driver
     print("Set chrome driver")
@@ -32,50 +32,22 @@ def test_firstcase():
     driver.find_element_by_name("fld_username").send_keys("abcd123")
     driver.close()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Working on Radio button
-#driver.find_element_by_xpath("//input[@value='office']").click()
+# driver.find_element_by_xpath("//input[@value='office']").click()
 
 #  Work on Dropdown
-#obj = Select(driver.find_element_by_name("sex"))
-#obj.select_by_visible_text("Male")
-#obj.select_by_value("2")
-#obj.select_by_index(2)
+# obj = Select(driver.find_element_by_name("sex"))
+# obj.select_by_visible_text("Male")
+# obj.select_by_value("2")
+# obj.select_by_index(2)
 
 # Working on Checkbox
-#driver.find_element_by_name("terms").click()
+# driver.find_element_by_name("terms").click()
 
 # Work on Button
-#driver.find_element_by_xpath("//input[@type='submit']").click()
+# driver.find_element_by_xpath("//input[@type='submit']").click()
 
 # Work on Links
-#driver.find_element_by_link_text("Read Detail").click()
+# driver.find_element_by_link_text("Read Detail").click()
 
-#driver.close()
-
-
+# driver.close()
