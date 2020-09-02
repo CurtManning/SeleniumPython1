@@ -1,3 +1,3 @@
 # SeleniumPython1
 
-Runs on Jenkins and builds Allure Report
+Runs on Jenkins(AllureJob), then builds Allure Report.
